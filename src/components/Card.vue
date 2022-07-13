@@ -59,9 +59,11 @@
 				alt=""
 			/>
 			<img
-				class="rounded-md"
+				class="max-h-[302px] w-full rounded-md"
 				src="../assets/image-equilibrium.jpg"
 				alt="Equilibrium"
+				width="604px"
+				height="604px"
 			/>
 		</div>
 	</div>
