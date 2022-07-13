@@ -5,7 +5,7 @@ import Card from './components/Card.vue';
 </script>
 
 <template>
-	<div class="grid h-full place-content-center">
+	<div class="grid h-screen place-items-center">
 		<Card />
 	</div>
 </template>
