@@ -1,41 +1,77 @@
 <template>
-	<div class="w-[300px] p-4 grid bg-card-bg">
-		<div class="card-body text-soft-blue font-light mt-4">
-			<h1 class="text-white">Equilibrium #3429</h1>
-			<p class="mt-4">Our Equilibrium collection promotes balance and calm.</p>
+	<div class="card grid w-[350px] rounded-lg bg-card-bg p-6 pb-8">
+		<div class="card-body mt-5 font-light text-soft-blue">
+			<h1
+				class="mt-2.5 cursor-pointer self-start text-lg font-semibold tracking-widest text-white transition duration-75 hover:text-cyan"
+			>
+				Equilibrium #3429
+			</h1>
+			<p class="mt-4 font-light">
+				Our Equilibrium collection promotes balance and calm.
+			</p>
 		</div>
-		<div class="card-stats flex place-content-between mt-4">
-			<div class="text-cyan flex items-center">
+		<div class="card-stats mt-6 flex place-content-between items-center">
+			<div class="flex items-center text-cyan">
 				<img
-					class="mr-2 w-5 h-5 object-contain"
+					class="mr-2 h-5 w-5 object-contain"
 					src="../assets/icon-ethereum.svg"
 					alt=""
 				/>
-				<span>0.041 ETH</span>
+				<span class="font-semibold">0.041 ETH</span>
 			</div>
-			<div class="text-soft-blue flex items-center">
+			<div class="flex items-center text-soft-blue">
 				<img
-					class="mr-2 w-5 h-5 object-contain"
+					class="mr-2 h-5 w-5 object-contain"
 					src="../assets/icon-clock.svg"
 					alt=""
 				/>
-				<span>3 days left</span>
+				<span
+					class="transition duration-75 hover:cursor-pointer hover:text-cyan"
+					>3 days left</span
+				>
 			</div>
 		</div>
-		<hr class="text-dark-blue my-5" />
-		<div class="card-meta">
+		<hr class="my-5 text-dark-blue" />
+		<div class="card-meta flex items-center">
 			<img
-				class="w-6 h-6 object-contain rounded-100"
+				class="card-user-profile rounded-100 mr-3 h-8 w-8 rounded-full border border-white object-contain"
 				src="../assets/image-avatar.png"
+				alt="User profile picture"
+			/>
+			<p class="font-normal text-soft-blue">
+				Creation of
+				<span
+					class="card-username text-white transition duration-75 hover:cursor-pointer hover:text-cyan"
+				>
+					Jules Wyvern</span
+				>
+			</p>
+		</div>
+		<div
+			class="card-illustration relative order-first -mb-0.5 grid cursor-pointer place-content-center"
+		>
+			<div
+				class="absolute z-10 h-full w-full rounded-md bg-cyan opacity-0 bg-blend-lighten transition duration-75 hover:opacity-50 hover:bg-blend-multiply"
+			></div>
+			<img
+				class="card-view-icon absolute place-self-center opacity-0"
+				src="../assets/icon-view.svg"
 				alt=""
 			/>
-			<span>Jules Wyvern</span>
-		</div>
-		<div class="card-illustration order-first">
-			<img src="https://picsum.photos/id/1/300/300" alt="" />
+			<img
+				class="rounded-md"
+				src="../assets/image-equilibrium.jpg"
+				alt="Equilibrium"
+			/>
 		</div>
 	</div>
 </template>
+
+<style>
+.card-illustration:hover > .card-view-icon {
+	opacity: 1;
+}
+</style>
 
 <script>
 export default {
