@@ -16,7 +16,11 @@ module.exports = {
 			'dark-blue': 'hsl(215, 32%, 27%)',
 			white: 'hsl(0, 0%, 100%)',
 		},
-		extend: {},
+		extend: {
+			fontFamily: {
+				'Outfit': ['Outfit', 'sans-serif']
+			}
+		},
 	},
 	plugins: [],
 };
