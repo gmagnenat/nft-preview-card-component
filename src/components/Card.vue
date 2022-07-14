@@ -1,12 +1,15 @@
 <template>
 	<div class="card grid w-[350px] rounded-lg bg-card-bg p-6 pb-8">
 		<div class="card-body mt-5 font-light text-soft-blue">
-			<h1
-				class="mt-2.5 cursor-pointer self-start text-lg font-semibold tracking-widest text-white transition duration-75 hover:text-cyan"
-			>
-				Equilibrium #3429
+			<h1>
+				<a
+					href="#"
+					class="cursor-pointer self-start text-lg font-semibold tracking-widest text-white transition duration-75 hover:text-cyan"
+				>
+					Equilibrium #3429
+				</a>
 			</h1>
-			<p class="mt-4 font-light">
+			<p class="leading-6.5 mt-4 font-light tracking-wider">
 				Our Equilibrium collection promotes balance and calm.
 			</p>
 		</div>
@@ -25,30 +28,33 @@
 					src="../assets/icon-clock.svg"
 					alt=""
 				/>
-				<span
+				<a
+					href="#"
 					class="transition duration-75 hover:cursor-pointer hover:text-cyan"
-					>3 days left</span
+					>3 days left</a
 				>
 			</div>
 		</div>
 		<hr class="my-5 text-dark-blue" />
 		<div class="card-meta flex items-center">
 			<img
-				class="card-user-profile rounded-100 mr-3 h-8 w-8 rounded-full border border-white object-contain"
+				class="card-user-profile rounded-100 mr-4 h-8 w-8 rounded-full border border-white object-contain"
 				src="../assets/image-avatar.png"
 				alt="User profile picture"
 			/>
 			<p class="font-normal text-soft-blue">
 				Creation of
-				<span
+				<a
+					href="#"
 					class="card-username text-white transition duration-75 hover:cursor-pointer hover:text-cyan"
 				>
-					Jules Wyvern</span
+					Jules Wyvern</a
 				>
 			</p>
 		</div>
-		<div
-			class="card-illustration relative order-first -mb-0.5 grid cursor-pointer place-content-center"
+		<a
+			href="#"
+			class="card-illustration relative order-first mb-1.5 grid cursor-pointer place-content-center"
 		>
 			<div
 				class="absolute z-10 h-full w-full rounded-md bg-cyan opacity-0 bg-blend-lighten transition duration-75 hover:opacity-50 hover:bg-blend-multiply"
@@ -63,9 +69,9 @@
 				src="../assets/image-equilibrium.jpg"
 				alt="Equilibrium"
 				width="604px"
-				height="604px"
+				height="auto"
 			/>
-		</div>
+		</a>
 	</div>
 </template>
 
