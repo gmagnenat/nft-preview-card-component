@@ -68,8 +68,8 @@
 				class="max-h-[302px] w-full rounded-md"
 				src="../assets/image-equilibrium.jpg"
 				alt="Equilibrium"
-				width="604px"
-				height="auto"
+				width="604"
+				height="604"
 			/>
 		</a>
 	</div>
